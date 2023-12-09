@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mencari Kemiripan Dokumen</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mencari Kemiripan Dokumen</h1>
+        <div class="container-result">
+            {% for comparison in comparisons %}
+                <div>
+                    <h3>Perbandingan dengan {{ comparison.file_name }}</h3>
+                    <p>Kemiripan: {{ comparison.similarity }}%</p>
+                </div>
+            {% endfor %}
+        </div>
+        <a href="javascript:history.back()"><button>Back</button></a>
+    </div>
+</body>
+</html>

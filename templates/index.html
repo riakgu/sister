@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mencari Kemiripan Dokumen</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mencari Kemiripan Dokumen</h1>
+        <h3>Kelompok 8</h3>
+
+        <form action="/result" method="post">
+            <label for="text1">Text:</label><br>
+            <textarea name="text1" placeholder="Enter text" rows="10" cols="50" required></textarea><br><br>
+            <input type="submit" value="Compare">
+        </form>
+    </div>
+</body>
+</html>
